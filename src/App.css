@@ -1,8 +1,8 @@
-.nav-onscreen {
+.nav-item .active {
     background-color: #8369cf;
     color: white;
 }
 
-.nav-onscreen:hover {
+.nav-item .active:hover {
     color: white!important;
 }

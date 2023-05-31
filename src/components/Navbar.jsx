@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
-	const navLinkStyle = 'hover:text-theme-purple px-2.5 py-1 rounded-md';
-	const hamburgerLinkStyle = 'hover:bg-violet-100 inline-block w-full rounded-sm px-2 pt-1 pb-0.5';
-	const [isMenuOpen, setIsMenuOpen] = useState(true);
-	const [isOverlayDisplayed, setIsOverlayDisplayed] = useState(true);
-	const [isMenuDisplayed, setIsMenuDisplayed] = useState(true);
-	const [isMenuInPosition, setIsMenuInPosition] = useState(true);
+	const navLinks = [{for: 'Home', to: 'about'}, {for: 'Skills', to:'skills'}, {for: 'Projects', to: 'projects'}, {for: 'Contact Me', to: 'contact-me'}]
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isOverlayDisplayed, setIsOverlayDisplayed] = useState(false);
+	const [isMenuDisplayed, setIsMenuDisplayed] = useState(false);
+	const [isMenuInPosition, setIsMenuInPosition] = useState(false);
 
 	const toggleHamMenu = () => {
 		if (!isMenuOpen) {
@@ -46,26 +46,18 @@ const Navbar = () => {
 					isMenuInPosition ? '' : 'translate-y-[-100%]'
 				}`}
 			>
-				<li>
-					<a href="/#about" className={hamburgerLinkStyle} onClick={toggleHamMenu}>
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="/#skills" className={hamburgerLinkStyle} onClick={toggleHamMenu}>
-						Skills
-					</a>
-				</li>
-				<li>
-					<a href="/#projects" className={hamburgerLinkStyle} onClick={toggleHamMenu}>
-						Projects
-					</a>
-				</li>
-				<li>
-					<a href="/#contact-me" className={hamburgerLinkStyle} onClick={toggleHamMenu}>
-						Contact Me
-					</a>
-				</li>
+				{navLinks.map((link, index) => { return (
+					<li key={'hamburger-' + index} className='hamburger-item'>
+						<Link
+							to={link.to}
+							spy={true}
+							smooth={true}
+							offset={-80}
+							duration={500}
+							className="hover:bg-violet-100 inline-block w-full rounded-sm px-2 pt-1 pb-0.5" onClick={toggleHamMenu}
+						>{link.for}</Link>
+					</li>)
+				})}
 			</ul>
 			<nav className=" bg-white flex z-50 justify-center w-full h-14 px-4 md:px-6 fixed shadow-md">
 				<div
@@ -95,18 +87,22 @@ const Navbar = () => {
 					</div>
 					<p className="font-bold text-2xl text-theme-purple">@idlionora</p>
 					<ul className="hidden sm:flex items-center gap-2 font-semibold">
-						<li className={navLinkStyle}>
-							<a href="/#about">Home</a>
-						</li>
-						<li className={navLinkStyle}>
-							<a href="/#skills">Skills</a>
-						</li>
-						<li className={navLinkStyle}>
-							<a href="/#projects">Projects</a>
-						</li>
-						<li className={navLinkStyle}>
-							<a href="/#contact-me">Contact Me</a>
-						</li>
+						{navLinks.map((link, index) => {
+							return (
+								<li key={'nav-' + index} className="nav-item">
+									<Link
+										to={link.to}
+										spy={true}
+										smooth={true}
+										offset={-80}
+										duration={500}
+										className="inline-block hover:text-theme-purple px-2.5 py-1 rounded-md cursor-pointer"
+									>
+										{link.for}
+									</Link>
+								</li>
+							);
+						})}
 					</ul>
 				</div>
 			</nav>
