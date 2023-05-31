@@ -1,0 +1,8 @@
+.nav-onscreen {
+    background-color: #8369cf;
+    color: white;
+}
+
+.nav-onscreen:hover {
+    color: white!important;
+}
