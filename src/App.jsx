@@ -25,10 +25,10 @@ function App() {
 					<div id="banner-container" className="w-full max-w-6xl relative">
 						<div
 							id="bannertext-container"
-							className="flex flex-col items-center sm:items-start text-center mt-20 mb-14 sm:text-left sm:my-0 sm:w-1/2 sm:absolute sm:top-1/2 sm:translate-y-[-50%] z-[5] "
+							className="flex flex-col items-center text-center mt-20 mb-14 sm:text-left sm:my-0 sm:w-1/2 sm:absolute sm:top-1/2 sm:translate-y-[-50%] z-[5] "
 						>
-							<h1 className="text-5xl lg:text-6xl">Hi, I&apos;m&nbsp;Nurul.</h1>
-							<p className="max-w-[470px] sm:max-w-full text-xl sm:text-lg sm:font-medium md:text-xl lg:font-normal">
+							<h1 className="w-full text-5xl lg:text-6xl">Hi, I&apos;m&nbsp;Nurul.</h1>
+							<p className="w-full max-w-[470px] sm:max-w-full text-xl sm:text-lg sm:font-medium md:text-xl lg:font-normal">
 								I can help you build websites for business or personal&nbsp;use.
 							</p>
 						</div>
@@ -105,8 +105,8 @@ function App() {
 						<ul className="w-full grid grid-cols-[repeat(auto-fit,_minmax(75px,_1fr))] gap-5 mt-3">
 							{skillLogos.map(({ pic, label }, index) => {
 								return (
-									<li key={'logo-' + index}>
-										<div className="flex h-full max-h-[100px] max-w-[90px] justify-center items-center">
+									<li key={'logo-' + index} className='flex flex-col items-center justify-end'>
+										<div className="flex h-full max-h-[90px] max-w-[80px]">
 											<img
 												src={pic}
 												alt=""
@@ -114,7 +114,7 @@ function App() {
 											/>
 										</div>
 										<div className="flex justify-center">
-											<p className="text-lg font-medium mt-1">{label}</p>
+											<p className="text-lg font-medium mt-1 max-h-[1.75rem]">{label}</p>
 										</div>
 									</li>
 								);
@@ -122,7 +122,10 @@ function App() {
 						</ul>
 					</div>
 				</section>
-				<section id="projects" className="w-full h-[1000px] flex justify-center px-4 md:px-6">
+				<section
+					id="projects"
+					className="w-full h-[1000px] flex justify-center px-4 md:px-6"
+				>
 					<div id="projects-container" className="w-full max-w-6xl py-12 text-center">
 						<h2 className="text-4xl sm:text-3xl md:text-4xl ">Projects</h2>
 					</div>
