@@ -137,3 +137,18 @@
     src: url('./assets/fonts/mulish-semibolditalic-webfont.woff2') format('woff2'),
          url('./assets/fonts/mulish-semibolditalic-webfont.woff') format('woff')
 }
+
+@font-face {
+    font-family: 'Mulish';
+    font-weight: 700;
+    src: url('./assets/fonts/mulish-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/mulish-bold-webfont.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Mulish';
+    font-style: italic;
+    font-weight: 700;
+    src: url('./assets/fonts/mulish-bolditalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/mulish-bolditalic-webfont.woff') format('woff')
+}
