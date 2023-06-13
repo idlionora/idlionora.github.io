@@ -1,10 +1,12 @@
+import PropTypes from 'prop-types';
+
 const ProfileTitle = ({
 	divClass= 'w-full',
 	width = '1248.5px',
 	rotate = 0,
 	fill = 'none',
 	stroke = '#000000',
-	strokeWidth = '1',
+	strokeWidth = 1,
 }) => {
 	return (
 		<div className={`${divClass} flex justify-center items-center`}>
@@ -28,5 +30,16 @@ const ProfileTitle = ({
 		</div>
 	);
 };
+ProfileTitle.propTypes = {
+	divClass: PropTypes.string,
+	width: PropTypes.string,
+	rotate: PropTypes.number,
+	fill: PropTypes.string,
+	stroke: PropTypes.string,
+	strokeWidth: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number
+	])
+}
 
 export default ProfileTitle;
