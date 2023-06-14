@@ -159,7 +159,7 @@ function App() {
 				>
 					<div id="projects-container" className="w-full max-w-5xl py-12 text-center">
 						<h2>Projects</h2>
-						<div id='projectcards-container' className='w-full flex flex-col gap-7 px-2 mt-6'>
+						<div id='projectcards-container' className='w-full flex flex-col gap-8 px-2 mt-6'>
 							{projectDatas.map(({id, pic, title, desc, techStack, liveUrl, sourceUrl}) => {
 								return (
 									<ProjectCard key={'projectcard-' + id} id={id} pic={pic} title={title} desc={desc} techStack={techStack} liveUrl={liveUrl} sourceUrl={sourceUrl}/>
