@@ -6,3 +6,12 @@
 .nav-item .active:hover {
     color: white!important;
 }
+
+.projectpic-size {
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+}
+
+.half-circle-cyan {
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,0) 50%, rgba(96, 213, 213, 1) 50%, rgba(96, 213, 213, 1) 100%);
+}

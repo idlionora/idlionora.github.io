@@ -12,6 +12,27 @@
     h1, h2, h3 {
         font-family: 'Bookmania', Georgia, serif;
     }
+
+    h2 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    @media (min-width: 640px) and (max-width: 768px) {
+        h2 {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        h3 {
+            font-size: 1.55rem
+        }
+    }
 }
 @tailwind components;
 @tailwind utilities;
