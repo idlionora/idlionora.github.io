@@ -14,6 +14,8 @@ import logoReact from './assets/logo-react.png';
 import logoRedux from './assets/logo-redux.png';
 import logoMui from './assets/logo-mui.png';
 import logoTailwind from './assets/logo-tailwind.png'
+import logoLinkedin from './assets/logo-linkedin.png'
+import logoGithub from './assets/logo-github.png'
 import projectimg1 from './assets/project-designcamp.png';
 import './App.css';
 
@@ -153,29 +155,87 @@ function App() {
 						</ul>
 					</div>
 				</section>
-				<section
-					id="projects"
-					className="w-full flex justify-center px-4 md:px-6"
-				>
+				<section id="projects" className="w-full flex justify-center px-4 md:px-6">
 					<div id="projects-container" className="w-full max-w-5xl py-12 text-center">
 						<h2>Projects</h2>
-						<div id='projectcards-container' className='w-full flex flex-col gap-8 px-2 mt-6'>
-							{projectDatas.map(({id, pic, title, desc, techStack, liveUrl, sourceUrl}) => {
-								return (
-									<ProjectCard key={'projectcard-' + id} id={id} pic={pic} title={title} desc={desc} techStack={techStack} liveUrl={liveUrl} sourceUrl={sourceUrl}/>
-								)
-							})}
+						<div
+							id="projectcards-container"
+							className="w-full flex flex-col gap-8 px-2 mt-6"
+						>
+							{projectDatas.map(
+								({ id, pic, title, desc, techStack, liveUrl, sourceUrl }) => {
+									return (
+										<ProjectCard
+											key={'projectcard-' + id}
+											id={id}
+											pic={pic}
+											title={title}
+											desc={desc}
+											techStack={techStack}
+											liveUrl={liveUrl}
+											sourceUrl={sourceUrl}
+										/>
+									);
+								}
+							)}
 						</div>
 					</div>
 				</section>
-				<section
-					id="contact-me"
-					className="w-full h-72 bg-[#eeeff1] flex justify-center px-4 md:px-6"
-				>
-					<div id="contactme-container" className="w-full max-w-5xl py-12 text-center">
+				<section id="contact-me" className="w-full flex justify-center px-4 md:px-6">
+					<div
+						id="contactme-container"
+						className="w-full max-w-5xl pt-6 pb-16 text-center text-xl sm:text-lg md:text-xl"
+					>
 						<h2>Contact Me</h2>
+						<p className="mt-3">Would you like to work with me?</p>
+						<p>Let&apos;s get in touch!</p>
+						<div className="w-full mt-4 flex flex-col items-center gap-3 text-xl sm:text-[1.2rem] lg:text-xl font-semibold sm:font-medium lg:font-semibold">
+							<a
+								href="mailto:idlionora@gmail.com"
+								className="block w-[18.65rem] sm:w-[17.7rem] lg:w-[18.65rem] py-2 sm:py-1.5 lg:py-2 ease-in-out duration-200 border-solid border-2 border-theme-cyan rounded-md text-theme-cyan hover:bg-theme-cyan hover:text-white"
+							>
+								email: idlionora@gmail.com
+							</a>
+							<a
+								href="mailto:idlionora@gmail.com"
+								className="block w-[18.65rem] sm:w-[17.7rem] lg:w-[18.65rem] py-2 sm:py-1.5 lg:py-2 ease-in-out duration-200 border-solid border-2 border-theme-cyan rounded-md text-theme-cyan hover:bg-theme-cyan hover:text-white"
+							>
+								phone: +62-813-9547-6613
+							</a>
+						</div>
 					</div>
 				</section>
+				<footer className="w-full h-32 bg-zinc-900 flex justify-center px-4 md:px-6">
+					<div className="w-full max-w-6xl h-full flex justify-between items-center text-white pt-1">
+						<div className="w-4/5">
+							<p className="font-light text-zinc-50">© 2023, built by Nurul Azizah</p>
+						</div>
+						<div className="flex items-center w-1/5 justify-end">
+							<div className="flex items-center w-[3.8rem] justify-between">
+								<a
+									href="https://github.com/idlionora/"
+									className="shrink-0 w-7 opacity-95 hover:opacity-100 flex justify-center"
+								>
+									<img
+										src={logoGithub}
+										alt="GitHub"
+										className="w-5 hover:w-7 ease-in-out duration-100"
+									/>
+								</a>
+								<a
+									href="https://www.linkedin.com/in/idlionora/"
+									className="shrink-0 w-7 opacity-95 hover:opacity-100 flex justify-center"
+								>
+									<img
+										src={logoLinkedin}
+										alt="LinkedIn"
+										className="w-5 hover:w-7 ease-in-out duration-100"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</footer>
 			</main>
 		</>
 	);
