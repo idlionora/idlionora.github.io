@@ -60,8 +60,11 @@ function App() {
 								I can help you build websites for business or personal&nbsp;use.
 							</p>
 						</div>
-						<div id="bannerpic-container" className=" flex justify-end relative">
-							<div className="absolute w-11/12 sm:w-[45.8333%] pt-[73.333%] sm:pt-[36.6667%] rounded-[2.4rem] mr-[4.1667%] sm:mr-[2.0833%] sm:mt-16 lg:mt-20 rotate-12">
+						<div
+							id="bannerpic-container"
+							className=" flex justify-end relative"
+						>
+							<div className="absolute w-11/12 pt-[73.333%] rounded-[2.4rem] mr-[4.1667%] sm:w-[45.8333%] sm:pt-[36.6667%] sm:mr-[2.0833%] sm:mt-16 lg:mt-20 rotate-12">
 								<div className="absolute left-[-4.5%] sm:left-[-114.8%] lg:left-[-114%] top-[1.05rem] sm:top-[-0.95rem] md:top-[-0.75rem] lg:top-[-0.2rem] rotate-[-12deg] w-[109.091%] sm:w-[218.189%] h-full sm:h-[128.62%] md:h-[124.11%] lg:h-[118.94%] opacity-60 mt-[-1rem]">
 									<div className="absolute w-screen right-1/2 translate-x-1/2 flex justify-center bottom-0">
 										<ProfileTitle
@@ -73,7 +76,7 @@ function App() {
 									</div>
 								</div>
 							</div>
-							<div className="w-11/12 sm:w-[45.8333%] pt-[73.333%] sm:pt-[36.6667%] rounded-[2.4rem] float-right mr-[4.1667%] sm:mr-[2.0833%] sm:mt-16 lg:mt-20 relative rotate-12 overflow-hidden">
+							<div className="w-11/12 pt-[73.333%] rounded-[2.4rem] mr-[4.1667%] sm:w-[45.8333%] sm:pt-[36.6667%] sm:mr-[2.0833%] sm:mt-16 lg:mt-20 relative rotate-12 overflow-hidden">
 								<div className="absolute w-[113.1254%] bottom-1/2 translate-y-1/2 right-1/2 translate-x-1/2 rotate-[-12deg]">
 									<img
 										src={imgProfile}
@@ -128,16 +131,16 @@ function App() {
 					id="skills"
 					className="w-full bg-[#f8f7fc] flex justify-center px-4 md:px-6"
 				>
-					<div id="skill-container" className="w-full max-w-5xl pt-12 pb-14 text-center">
+					<div id="skill-container" className="w-full max-w-5xl pt-12 pb-16 text-center">
 						<h2>Current Skills</h2>
-						<ul className="w-full grid grid-cols-[repeat(auto-fit,_minmax(75px,_1fr))] gap-5 mt-3">
+						<ul className="w-full flex flex-wrap gap-5 mt-4 justify-center">
 							{skillLogos.map(({ pic, label }, index) => {
 								return (
 									<li
 										key={'logo-' + index}
-										className="flex flex-col items-center justify-end"
+										className="flex flex-col items-center justify-end w-full max-w-[5rem] min-[940px]:max-w-[5.2rem]"
 									>
-										<div className="flex h-full max-h-[90px] max-w-[80px]">
+										<div className="h-full max-h-[70px] max-w-[65px] min-[940px]:max-h-[75px] min-[940px]:max-w-[70px]">
 											<img
 												src={pic}
 												alt=""
@@ -145,7 +148,7 @@ function App() {
 											/>
 										</div>
 										<div className="flex justify-center">
-											<p className="text-lg font-medium mt-1 max-h-[1.75rem]">
+											<p className="text-base font-medium mt-1 max-h-[1.75rem]">
 												{label}
 											</p>
 										</div>
@@ -208,7 +211,9 @@ function App() {
 				<footer className="w-full h-32 bg-zinc-900 flex justify-center px-4 md:px-6">
 					<div className="w-full max-w-6xl h-full flex justify-between items-center text-white pt-1">
 						<div className="w-4/5">
-							<p className="font-light text-zinc-50">© 2023, built by Nurul Azizah</p>
+							<p className="font-light text-zinc-50">
+								© 2023, built by Nurul&nbsp;Azizah
+							</p>
 						</div>
 						<div className="flex items-center w-1/5 justify-end">
 							<div className="flex items-center w-[3.8rem] justify-between">
