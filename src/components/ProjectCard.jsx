@@ -31,8 +31,8 @@ const ProjectCard = ({
 				id % 2 == 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'
 			} px-5 py-8 gap-4`}
 		>
-			<div className="w-full sm:w-[45%] text-center flex flex-col justify-center text-lg sm:text-base lg:text-lg">
-				<h3 className="mt-2 mb-1 sm:my-0">{title}</h3>
+			<div className="w-full sm:w-[45%] text-center flex flex-col justify-center text-lg sm:text-base lg:text-lg px-1">
+				<h3 className="pt-2 mb-1 sm:my-0">{title}</h3>
 				<p className="font-medium mt-2">{desc}</p>
 				<ul className="font-medium text-lg sm:text-base lg:text-lg mt-5 w-full flex flex-wrap gap-x-2 gap-y-1 items-center justify-center">
 					{techStack.map((tech, index) => {

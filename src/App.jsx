@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import { ProjectDesc1 } from './components/ProjectDataFragments';
+import { ProjectDesc1, ProjectDesc2 } from './components/ProjectDataFragments';
 import ProjectCard from './components/ProjectCard';
 import ProfileTitle from './assets/ProfileTitle';
 import imgProfile from './assets/img-profile.png';
@@ -13,10 +13,12 @@ import logoBootstrap from './assets/logo-bootstrap.png';
 import logoReact from './assets/logo-react.png';
 import logoRedux from './assets/logo-redux.png';
 import logoMui from './assets/logo-mui.png';
-import logoTailwind from './assets/logo-tailwind.png'
-import logoLinkedin from './assets/logo-linkedin.png'
-import logoGithub from './assets/logo-github.png'
+import logoTailwind from './assets/logo-tailwind.png';
+import logoLinkedin from './assets/logo-linkedin.png';
+import logoGithub from './assets/logo-github.png';
 import projectimg1 from './assets/project-designcamp.png';
+import projectimg2 from './assets/project-myminiblog.png';
+import projectimg3 from './assets/project-anibox.png';
 import './App.css';
 
 const projectDatas = [
@@ -31,12 +33,21 @@ const projectDatas = [
 	},
 	{
 		id: 2,
-		pic: projectimg1,
-		title: 'DesignCamp',
-		desc: <ProjectDesc1 />,
-		techStack: ['React', 'Tailwind CSS', 'Material UI', 'Swiper'],
-		liveUrl: 'https://designcamp-noraslice.vercel.app/',
-		sourceUrl: 'https://github.com/idlionora/designcamp-landing',
+		pic: projectimg2,
+		title: 'myMiniBlog',
+		desc: <ProjectDesc2 />,
+		techStack: ['React', 'Tailwind CSS', 'TinyMCE'],
+		liveUrl: 'https://noras-miniblog.vercel.app/',
+		sourceUrl: 'https://github.com/idlionora/my-mini-blog',
+	},
+	{
+		id: 3,
+		pic: projectimg3,
+		title: 'AniBox',
+		desc: "AniBox is anime catalogue website where user can see anime titles and preview categorized by trend in home page, search by title, and read extended information in each of detail pages. This project is community exercise to fetch data from custom API, display the result in page layout, and handle error if the data fetched isn't available. Live searching is applied to form input in search page so the result will be displayed while we are actively typing. In the detail page, we have general information, synopsis, trailer, and streaming links available.",
+		techStack: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'Flowbite', 'Axios'],
+		liveUrl: 'https://noras-animesite.vercel.app/',
+		sourceUrl: 'https://github.com/idlionora/anibox-exercise',
 	},
 ];
 
@@ -212,7 +223,7 @@ function App() {
 					<div className="w-full max-w-6xl h-full flex justify-between items-center text-white pt-1">
 						<div className="w-4/5">
 							<p className="font-light text-zinc-50">
-								© 2023, built by Nurul&nbsp;Azizah
+								© 2023, built by Nurul&nbsp;Azizah.
 							</p>
 						</div>
 						<div className="flex items-center w-1/5 justify-end">

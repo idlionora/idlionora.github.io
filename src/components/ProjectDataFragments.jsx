@@ -17,3 +17,17 @@ export const ProjectDesc1 = () => {
 		</>
 	);
 }
+
+export const ProjectDesc2 = () => {
+	return (
+		<>
+			myMiniBlog is a blog application for different users to write their ideas into. The blog
+			is equipped with a text editor interface so user does not have to bother with directly
+			editting HTML elements into the blog post. User can also upload their choice of banner
+			and thumbnail pictures to better represent their blog post. They can delete and edit the
+			post after their initial posting. Currently, the site is yet to connect with database,
+			so, the site is not at all functional. The backend side of the project will soon to be
+			added in the&nbsp;future.
+		</>
+	);
+}
