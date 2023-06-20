@@ -71,10 +71,7 @@ function App() {
 								I can help you build websites for business or personal&nbsp;use.
 							</p>
 						</div>
-						<div
-							id="bannerpic-container"
-							className=" flex justify-end relative"
-						>
+						<div id="bannerpic-container" className=" flex justify-end relative">
 							<div className="absolute w-11/12 pt-[73.333%] rounded-[2.4rem] mr-[4.1667%] sm:w-[45.8333%] sm:pt-[36.6667%] sm:mr-[2.0833%] sm:mt-16 lg:mt-20 rotate-12">
 								<div className="absolute left-[-4.5%] sm:left-[-114.8%] lg:left-[-114%] top-[1.05rem] sm:top-[-0.95rem] md:top-[-0.75rem] lg:top-[-0.2rem] rotate-[-12deg] w-[109.091%] sm:w-[218.189%] h-full sm:h-[128.62%] md:h-[124.11%] lg:h-[118.94%] opacity-60 mt-[-1rem]">
 									<div className="absolute w-screen right-1/2 translate-x-1/2 flex justify-center bottom-0">
@@ -211,7 +208,7 @@ function App() {
 								email: idlionora@gmail.com
 							</a>
 							<a
-								href="mailto:idlionora@gmail.com"
+								href="tel:+62-813-9547-6613"
 								className="block w-[18.65rem] sm:w-[17.7rem] lg:w-[18.65rem] py-2 sm:py-1.5 lg:py-2 ease-in-out duration-200 border-solid border-2 border-theme-cyan rounded-md text-theme-cyan hover:bg-theme-cyan hover:text-white"
 							>
 								phone: +62-813-9547-6613
