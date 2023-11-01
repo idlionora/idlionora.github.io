@@ -1,4 +1,4 @@
-export const ProjectDesc1 = () => {
+export const DesignCampDesc = () => {
     return (
 		<>
 			DesignCamp is a singular landing page where information about package of design course
@@ -11,14 +11,14 @@ export const ProjectDesc1 = () => {
 				rel="noopener noreferrer"
 				className="text-theme-purple hover:text-theme-cyan"
 			>
-				figma design
+				Figma design
 			</a> {' '}
 			by Codepolitan.
 		</>
 	);
 }
 
-export const ProjectDesc2 = () => {
+export const MyMiniBlogDesc = () => {
 	return (
 		<>
 			myMiniBlog is a blog application for different users to write their ideas into. The blog
@@ -28,6 +28,10 @@ export const ProjectDesc2 = () => {
 			post after their initial posting. Currently, the site is yet to connect with database,
 			so, the site is not at all functional. The backend side of the project will soon to be
 			added in the&nbsp;future.
+			<br />
+			<span className="font-normal text-base sm:text-sm lg:text-base">
+				( test email:&nbsp;admin@emailku.id, password:&nbsp;pass567 )
+			</span>
 		</>
 	);
 }

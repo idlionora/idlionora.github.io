@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import { ProjectDesc1, ProjectDesc2 } from './components/ProjectDataFragments';
+import { DesignCampDesc, MyMiniBlogDesc } from './components/ProjectDataFragments';
 import ProjectCard from './components/ProjectCard';
 import ProfileTitle from './assets/ProfileTitle';
 import imgProfile from './assets/img-profile.png';
@@ -7,42 +7,54 @@ import imgAbout from './assets/img-about.png';
 import logoHtml from './assets/logo-html5.png';
 import logoCss from './assets/logo-css3.png';
 import logoJs from './assets/logo-javascript.png';
+import logoTs from './assets/logo-typescript.png';
 import logoJquery from './assets/logo-jquery.png';
 import logoSass from './assets/logo-sass.png';
 import logoBootstrap from './assets/logo-bootstrap.png';
 import logoReact from './assets/logo-react.png';
 import logoRedux from './assets/logo-redux.png';
+import logoZustand from './assets/logo-zustand.png';
 import logoMui from './assets/logo-mui.png';
 import logoTailwind from './assets/logo-tailwind.png';
 import logoLinkedin from './assets/logo-linkedin.png';
 import logoGithub from './assets/logo-github.png';
-import projectimg1 from './assets/project-designcamp.png';
-import projectimg2 from './assets/project-myminiblog.png';
-import projectimg3 from './assets/project-anibox.png';
+import imgSupersewa from './assets/project-supersewa.png'
+import imgDesignCamp from './assets/project-designcamp.png';
+import imgMyMiniBlog from './assets/project-myminiblog.png';
+import imgAnibox from './assets/project-anibox.png';
 import './App.css';
 
 const projectDatas = [
 	{
 		id: 1,
-		pic: projectimg1,
+		pic: imgSupersewa,
+		title: 'Supersewa Laundry',
+		desc: "Supersewa Laundry is a web application where business owners or admins can manage customer orders, specifically for baby equipment's laundry package. This application is intended to be an addition for Supersewa's main service, that is providing management app for baby equipment rental business. The pages available for viewing here are mock design consisted of page to view all the customer orders, page to input new order, page of order detail where user can edit order's data, and page for public viewing where customer can see their current laundry status.",
+		techStack: ['TypeScript', 'React', 'Tailwind CSS', 'Radix UI', 'Zustand'],
+		liveUrl: 'https://supersewa-laundry.vercel.app/orders',
+		sourceUrl: 'https://github.com/idlionora/supersewa-laundry',
+	},
+	{
+		id: 2,
+		pic: imgDesignCamp,
 		title: 'DesignCamp',
-		desc: <ProjectDesc1 />,
+		desc: <DesignCampDesc />,
 		techStack: ['React', 'Tailwind CSS', 'Material UI', 'Swiper'],
 		liveUrl: 'https://designcamp-noraslice.vercel.app/',
 		sourceUrl: 'https://github.com/idlionora/designcamp-landing',
 	},
 	{
-		id: 2,
-		pic: projectimg2,
+		id: 3,
+		pic: imgMyMiniBlog,
 		title: 'myMiniBlog',
-		desc: <ProjectDesc2 />,
+		desc: <MyMiniBlogDesc />,
 		techStack: ['React', 'Tailwind CSS', 'TinyMCE'],
 		liveUrl: 'https://noras-miniblog.vercel.app/',
 		sourceUrl: 'https://github.com/idlionora/my-mini-blog',
 	},
 	{
-		id: 3,
-		pic: projectimg3,
+		id: 4,
+		pic: imgAnibox,
 		title: 'AniBox',
 		desc: "AniBox is anime catalogue website where user can see anime titles and preview categorized by trend in home page, search by title, and read extended information in each of detail pages. This project is community exercise to fetch data from custom API, display the result in page layout, and handle error if the data fetched isn't available. Live searching is applied to form input in search page so the result will be displayed while we are actively typing. In the detail page, we have general information, synopsis, trailer, and streaming links available.",
 		techStack: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'Flowbite', 'Axios'],
@@ -52,7 +64,7 @@ const projectDatas = [
 ];
 
 function App() {
-	const skillLogos = [{pic: logoHtml, label: 'HTML'}, {pic: logoCss, label: 'CSS'}, {pic: logoJs, label: 'JavaScript'}, {pic: logoJquery, label: 'jQuery'}, {pic: logoSass, label: 'Sass'}, {pic: logoBootstrap, label: 'Bootstrap'}, {pic: logoReact, label: 'React'}, {pic: logoRedux, label:'Redux'}, {pic: logoMui, label: 'Material-UI'}, {pic: logoTailwind, label:'Tailwind CSS'}]
+	const skillLogos = [{pic: logoHtml, label: 'HTML'}, {pic: logoCss, label: 'CSS'}, {pic: logoJs, label: 'JavaScript'}, {pic: logoTs, label: 'TypeScript'}, {pic: logoJquery, label: 'jQuery'}, {pic: logoSass, label: 'Sass'}, {pic: logoBootstrap, label: 'Bootstrap'}, {pic: logoReact, label: 'React'}, {pic: logoRedux, label:'Redux'}, {pic: logoZustand, label:'Zustand'}, {pic: logoMui, label: 'Material-UI'}, {pic: logoTailwind, label:'Tailwind CSS'}]
 	
 	return (
 		<>
